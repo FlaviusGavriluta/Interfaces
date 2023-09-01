@@ -1,17 +1,14 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.example.ui.BeingInterface;
+import org.example.ui.EmagInterface;
 
 public class Main {
     public static void main(String[] args) {
+        BeingInterface beingUI = new BeingInterface();
+        // beingUI.run();
 
-        Dog Rocky = new Dog();
-        Human Sam = new Human();
-        Cat Lucky = new Cat();
-
-        List<Beings> beings = List.of(Rocky, Sam, Lucky);
-
-        beings.stream().forEach(being -> being.sleeping());
+        EmagInterface emagUI = new EmagInterface();
+        emagUI.run();
     }
 }

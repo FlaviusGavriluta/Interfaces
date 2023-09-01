@@ -1,9 +1,14 @@
-package org.example;
+package org.example.beings;
 
 public class Cat implements Beings {
     @Override
-    public void speaks() {
+    public void speak() {
         System.out.println("Meaw meaw!");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("The cat runs.");
     }
 
     @Override
